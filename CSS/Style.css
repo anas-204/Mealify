@@ -115,6 +115,10 @@
     padding: 0;
     color: var(--navlink-color);
 }
+.btn2 a div i{
+    font-size: 15px;
+    margin-right: 2px;
+}
 .section-1 picture img:hover{
     animation: shake 1s infinite;
 }
