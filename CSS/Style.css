@@ -25,6 +25,9 @@
     font: 700 30px/normal system-ui;
     color: var(--logo-color);
 }
+.navbar-brand:hover{
+    color: var(--logo-color);
+}
 .navbar-brand span{
     color: var(--used-color);
 }
