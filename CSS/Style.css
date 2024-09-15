@@ -1,0 +1,307 @@
+:root{
+    --used-color:#CE1212;
+    --section1-background:#EEE;
+    --sections2-background:#fff;
+    --navbar-color:#FFF;
+    --logo-color:#212529;
+    --navlink-color:#4d504c;
+    --section-p-color:#6D6F72;
+}
+/* body{
+    color: var(--text-color);
+} */
+.nav-link{
+    color: var(--navlink-color);
+}
+.nav-link:hover{
+    color: var(--navlink-color);
+}
+.navbar{
+    height:90px;
+    z-index: 1000;
+    background-color: var(--navbar-color);
+}
+.navbar-brand,footer h3{
+    font: 700 30px/normal system-ui;
+    color: var(--logo-color);
+}
+.navbar-brand span{
+    color: var(--used-color);
+}
+.navbar-brand img,footer h3 img{
+    width: 35px;
+}
+.navbar-nav{
+    font: 600 17px/normal system-ui;
+    background-color: var(--navbar-color);
+}
+.navbar-toggler-icon{
+    background-image: none;
+}
+.navbar-toggler-icon i{
+    font-size: 28px;
+    color: var(--navlink-color);
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: var(--used-color);
+    bottom: 0;
+    left: 8px;
+    transition: all 0.5s ease;
+}
+.section-2 p:nth-child(2),
+.section-3 p:nth-child(2),
+.section-4 p:nth-child(2),
+.section-2 h3,.section-3 h3,.section-4 h3
+{
+    color: var(--section-p-color);
+}
+.card-body{
+     background-color: var(--navbar-color);
+}
+.nav-link:hover::after{
+   width: 80%;
+}
+.theme i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.section-1{
+    background-color: var(--section1-background);
+}
+.left-pt h2{
+    font: 700 65px/normal Amatic SC;
+    color: var(--logo-color);
+}
+.left-pt p{
+    font: 400 16px/26px system-ui;
+    color: rgb(79, 79, 90);
+}
+.btn1,.btn2{
+    font: 400 15px/normal system-ui;
+    background-color: var(--used-color);
+    color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 0px 25px 25px 25px;
+    width: fit-content;
+    height: fit-content;
+}
+.btn2{
+    border: none;
+    color: var(--navlink-color);
+}
+.btn2 div{
+    padding: 5px 15px;
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+}
+
+.left-pt a{
+    color: black;
+    text-decoration: none;
+    font: 400 20px/normal system-ui;
+    padding: 10px 15px;
+}
+.left-pt a i{
+    font-size: 40px;
+}
+.btn2 a{
+    font: 600 16px/normal system-ui;
+    padding: 0;
+    color: var(--navlink-color);
+}
+.section-1 picture img:hover{
+    animation: shake 1s infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.section-2,.section-4{
+    background-color: var(--sections2-background);
+}
+.section-2 h3 ,.section-3 h3,.section-4 h3{
+    font: 400 14px/normal inter;
+}
+.section-2 p:nth-child(2),.p1,.section-4:nth-child(2){
+    font: 400 50px/normal Amatic SC;
+}
+.section-2 p:nth-child(2) span , .p1 span ,.section-4:nth-child(2) span{
+    color: var(--used-color);
+}
+.card p:nth-child(3){
+    font: 400 15px/normal system-ui;
+    font-style: italic;
+    color: rgb(127, 127, 144);
+}
+.card p:nth-child(2){
+    font: 400 14px/normal system-ui;
+    color: rgb(127, 127, 144);
+}
+.detail{
+    background-color: var(--navbar-color);
+}
+form{
+    background-color: var(--navbar-color);
+}
+.card h5,.detail-body h6,.section-1 p{
+    color: var(--navlink-color);
+}
+.card{
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    outline: none;
+}
+.section-3{
+    background-color: var(--section1-background);
+    height: fit-content;
+}
+.section-3 picture img{
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.section-3 picture:hover > img{
+    transform: scale(1.1);
+}
+.section-3 picture{
+    overflow: hidden;
+    border: 4px solid #fff;
+    position:relative;
+    margin-bottom: 15px;
+}
+.big-container{
+    margin-right: 20px;
+    width: calc((100% - 100px) /3);
+}
+.layer{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000096;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.layer h5{
+    font: 700 26px/normal inter;
+}
+.layer p,.layer h5{
+    opacity: 0;
+    transition:opacity 0.3s ease;
+}
+picture:hover > .layer{
+    top: 0;
+}
+
+picture:hover > .layer h5 ,picture:hover > .layer p{
+    opacity: 1;
+}
+
+.detail{
+    width: calc((100% - 40px)/2);
+    margin: 10px;
+}
+
+.icon-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--used-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+form .btn{
+    background-color: var(--used-color);
+    color: #fff;
+    width: 150px;
+    border-radius: 25px;
+    outline:solid 1px var(--used-color);
+}
+@media screen and (max-width:776px) {
+    .big-container{
+        width: 90%;
+    }
+    .detail{
+        width: 100%;
+        margin-left: 0;
+    }
+    .detail-body{
+        font: 400 15px/normal system-ui;
+        width: fit-content;
+    }
+    .icon-container{
+        width: 40px;
+        height: 40px;
+    }
+}
+footer{
+    background-image: url(/images/textured-metal-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    color: #fff;
+}
+.media{
+    font: 700 19px/normal inter;
+}
+.social{
+    font-size: 25px;
+}
+.social i{
+    color: #fff;
+}
+footer ul li{
+    transition: all 0.5s ease;
+}
+footer ul li:hover{
+    background-color: #222222;
+    margin-left: 10px;
+}
+footer button{
+    background-color: var(--used-color);
+    color: #fff;
+}
+.contact i{
+    color: var(--used-color);
+    font-size: 25px;
+    margin: 5px;
+}
+footer input {
+    outline: none;
+}
+@media screen and (max-width:991px) {
+    .navbar-collapse{
+      position: absolute;
+      top: 90px;
+      left: 0px;
+    }
+}
+
+
+
+
+
+

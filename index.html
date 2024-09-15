@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mealify </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow position-fixed w-100">
+        <div class="container col-lg-10">
+            <a class="navbar-brand col-4 text-center" href="">
+                Mealify<span>.</span>
+                <img src="./images/favicon.png" alt="icon" class="mb-1 d-none d-sm-inline">
+            </a>
+            <div class="collapse navbar-collapse col-12 col-lg-6 flex-grow-0 text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto d-flex justify-content  ">
+                    <a class="nav-link mx-2 position-relative " aria-current="page" href="#home" onclick="closeNav();"> Home </a>
+                    <a class="nav-link mx-2 position-relative " href="#chefs"   onclick="closeNav();"> Chefs </a>
+                    <a class="nav-link mx-2 position-relative " href="#gallery" onclick="closeNav();"> Gallery </a>
+                    <a class="nav-link mx-2 position-relative " href="#contact" onclick="closeNav();"> Contact </a>
+                </div>
+            </div>
+            <div class="theme col-2 text-center">
+                <i class="bi bi-brightness-high-fill d-none" id="light"></i>
+                <i class="bi bi-moon-fill" id="dark"></i>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="bi bi-list"></i>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="section-1 vh-100 d-flex flex-column pb-2 col-12">
+
+
+        <div class="container col-md-10 col-11 my-lg-auto mt-auto mb-sm-5">
+            <div class="row g-0 d-flex justify-content-evenly flex-lg-row flex-column-reverse mb-0">
+                <div class="left-pt col-12 col-lg-5 my-auto">
+                    <h2 class="text-center text-lg-start col-lg-8">
+                        Enjoy Your Healthy
+                        Delicious Food
+                    </h2>
+                    <p class="text-center text-lg-start">
+                        Sed autem laudantium dolores.
+                        Voluptatem itaque ea consequatur eveniet.
+                        Eum quas beatae cumque eum quaerat.
+                    </p>
+                    <div class="btns col-12 d-flex align-items-center justify-content-center flex-column flex-sm-row ">
+                        <button class="me-md-3 btn1 d-sm-flex justify-content-center border-0">Book a Table</button>
+                        <button  class=" btn2 bg-transparent">
+                            <div class="bg-white rounded-circle d-inline-block pt-2 me-2">
+                                <i class="bi bi-play-fill me-2"></i>
+                            </div>
+                          <a href="https://www.youtube.com/" target="_blank"> watch a video </a>  
+                        </button>
+                    </div>
+
+                </div>
+                <picture class="right-pt col-12 col-lg-7 text-lg-end text-center">
+                    <img src="./images/hero-img.png" alt="" class="rounded-circle shadow col-10 col-sm-8">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section id="chefs" class="section-2 d-flex flex-column align-items-center py-5 col-12">
+        <h3 class="text-center mb-3">
+            CHEFS
+        </h3>
+        <p class="text-center mb-4">Our <span>Proffesional</span> Chefs</p>
+        <div class="row g-0 col-10 my-auto d-flex justify-content-center mt-4">
+
+            <div
+                class="card card1 col-sm-5 col-lg-3 col-11 text-center d-inline-block border-0 shadow mx-4 mb-5  position-static">
+                <img src="./images/chefs-1.jpg" class="card-img-top" alt="chef">
+                <div class="card-body">
+                    <h5 class="card-title">Walter White</h5>
+                    <p class="card-text">Master Chef</p>
+                    <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut.
+                        Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                </div>
+            </div>
+
+            <div
+                class="card card2 col-sm-5 col-lg-3 col-11 text-center d-inline-block border-0 shadow mx-4 mb-5 position-static">
+                <img src="./images/chefs-2.jpg" class="card-img-top" alt="chef">
+                <div class="card-body">
+                    <h5 class="card-title">Sarah Jhonson</h5>
+                    <p class="card-text">Patissier</p>
+                    <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                        corporis.
+                        Voluptate sed quas reiciendis animi neque sapiente.</p>
+                </div>
+            </div>
+
+            <div
+                class="card card3  col-sm-5 col-lg-3 col-11 text-center d-inline-block border-0 shadow mx-4 mb-5 position-static">
+                <img src="./images/chefs-3.jpg" class="card-img-top" alt="chef">
+                <div class="card-body">
+                    <h5 class="card-title">William Anderson</h5>
+                    <p class="card-text">Cook</p>
+                    <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt.
+                        Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="section-3 py-5 d-flex flex-column justify-content-center col-12 ">
+        <h3 class="text-center mb-3">
+            GALLERY
+        </h3>
+        <p class="text-center mb-4 p1"> Check <span>our gallery</span></p>
+        <div class="row g-0 col-11 col-lg-9 mx-auto ps-5">
+            <div class="big-container">
+                <picture class="img-container d-block"><img src="./images/meal-1.jpg" alt="meal" class="col-12 ">
+                    <div class="layer">
+                        <h5 class="text-center">Pizza</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Hawaiian pizza with ham and pineapple </p>
+                    </div>
+                </picture>
+                <picture class="img-container d-block"><img src="./images/meal-4.jpg" alt="meal" class="col-12 ">
+                    <div class="layer">
+                        <h5 class="text-center">Levitation Pizza</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Levitation pizza on black background. </p>
+                    </div>
+                </picture>
+            </div>
+            <div class="big-container">
+                <picture class="img-container d-block"><img src="./images/meal-2.jpg" alt="meal" class="col-12 ">
+                    <div class="layer">
+                        <h5 class="text-center">Beef steaks</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Tasty beef steaks flying above cast iron grate with fire
+                            flames. </p>
+                    </div>
+                </picture>
+                <picture class="img-container d-block"><img src="./images/meal-7.jpg" alt="meal" class="col-12 ">
+                    <div class="layer">
+                        <h5 class="text-center">Frittata</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Frittata or potato pie in a ceramic plate </p>
+                    </div>
+                </picture>
+            </div>
+            <div class="big-container">
+                <picture class="img-container d-block"><img src="./images/meal-3.jpg" alt="meal" class="col-12">
+                    <div class="layer">
+                        <h5 class="text-center">Burger</h5>
+                        <p class="text-center w-75 mx-auto text-light"> grass fed bison hamburger with chips & beer </p>
+                    </div>
+                </picture>
+                <picture class="img-container d-block"><img src="./images/meal-5.jpg" alt="meal" class="col-12">
+                    <div class="layer">
+                        <h5 class="text-center">Crispy Fried Chicken</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Golden brown chicken legs with a crunchy coating and juicy
+                            meat</p>
+                    </div>
+                </picture>
+                <picture class="img-container d-block"><img src="./images/meal-6.jpg" alt="meal" class="col-12">
+                    <div class="layer">
+                        <h5 class="text-center">Lyulya kebab</h5>
+                        <p class="text-center w-75 mx-auto text-light"> Tender and juicy skewers of ground lamb or beef, flavored
+                            with aromatic spices and herbs </p>
+                    </div>
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4 py-5 col-12" id="contact">
+        <h3 class="text-center mb-3">
+            CONTACT
+        </h3>
+        <p class="text-center mb-4 p1"> Need Help ? <span>Contact Us</span></p>
+        <div class="row g-0 col-10 col-md-8 mx-auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24194.891715929247!2d-74.0061377!3d40.7100586!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1725810633110!5m2!1sen!2seg"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="detail py-4 px-4 d-flex align-items-center shadow">
+                <div class="icon-container">
+                    <i class="bi bi-map"></i>
+                </div>
+                <div class="detail-body ms-3">
+                    <h6 class="d-inline">Our Address</h6>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+            </div>
+            <div class="detail py-4 px-4 d-flex align-items-center shadow">
+                <div class="icon-container">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <div class="detail-body ms-3">
+                    <h6 class="d-inline">Email Us</h6>
+                    <p>
+                        Contact@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="detail py-4 px-4 d-flex align-items-center shadow">
+                <div class="icon-container ">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="detail-body ms-3">
+                    <h6 class="d-inline">Call Us</h6>
+                    <p> +1 5589 55488 55 </p>
+                </div>
+            </div>
+            <div class="detail py-4 px-4 d-flex align-items-center shadow">
+                <div class="icon-container ">
+                    <i class="bi bi-share-fill"></i>
+                </div>
+                <div class="detail-body ms-3">
+                    <h6 class="d-inline">Opening Hours</h6>
+                    <p>
+                        <strong>Mon-Sat: </strong>11AM - 23PM: <strong> Sunday: </strong> Closed
+                    </p>
+                </div>
+            </div>
+            <form class=" text-lightshadow p-4 d-flex justify-content-center flex-column">
+                <input type="text" class="form-control col-5 m-2 p-3 rounded-0" placeholder="Your Name">
+                <input type="email" class="form-control col-5 m-2 p-3 rounded-0" placeholder="Your Email">
+                <input type="text" class="form-control m-2 p-3 rounded-0" placeholder="Subject">
+                <textarea class="col-12 form-control m-2 p-3 rounded-0" placeholder="Message"></textarea>
+                <button class="btn mx-auto mt-2" type="submit">Submit</button>
+            </form>
+
+    </section>
+
+    <footer class="d-flex align-items-center pt-3 justify-content-center">
+        <div class="row g-0 col-11 col-xl-9 mx-auto">
+
+            <div class="col-12 col-sm-10 col-md-8 col-lg-3 mb-3 ">
+                <h3 class="text-light"> <img src="./images/favicon.png" alt="icon" class="mb-1 d-none d-sm-inline">
+                    Mealify </h3>
+                <p>Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
+                <p class="text-center media">Social Media</p>
+                <hr>
+                <div class="social d-flex justify-content-around">
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"> <i class="bi bi-linkedin"></i> </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-10 col-lg-6 ps-4 mb-3 ">
+                <h4>Subscribe our Newsletter</h4>
+                <p>Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay
+                    up-to-date with all things Mealify!</p>
+                <input type="email" placeholder="Enter your email here" class="w-75 p-1">
+                <button class="border-0 p-2"> <i class="bi bi-envelope-fill"></i> Subscribe</button>
+                <div class="quick-links">
+                    <h3 class="text-light mt-2">Quick Links</h3>
+                    <ul class="d-flex flex-wrap ps-1 ">
+                        <li class="list-unstyled col-5 me-1 p-1"><a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> Menu </a></li>
+                        <li class="list-unstyled col-5 me-1 p-1"> <a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> Promo </a></li>
+                        <li class="list-unstyled col-5 me-1 p-1"><a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> About Us </a></li>
+                        <li class="list-unstyled col-5 me-1 p-1"><a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> Contact </a></li>
+                        <li class="list-unstyled col-5 me-1 p-1"><a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> Testimonial </a></li>
+                        <li class="list-unstyled col-5 me-1 p-1"><a class="text-decoration-none text-light" href=""> <i
+                                    class="bi bi-arrow-right-short"></i> Our Partners </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-10 col-md-8 col-lg-3 mb-3 ">
+                <h3 class="text-light"> Get in Touch </h3>
+                <div class="contact">
+                    <div class="location">
+                        <p> <i class="bi bi-geo-alt-fill"></i> A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                    <div class="email">
+                        <p> <i class="bi bi-envelope-fill"></i> contact@exapmle.com</p>
+                    </div>
+                    <div class="number">
+                        <p><i class="bi bi-telephone-fill"></i> +1 5556 548 5547</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Main.js"></script>
+</body>
+
+</html>
